@@ -1,9 +1,13 @@
 # snatchysneakers
 
 This was a project made by me about shoe e-commerce buisness for sneakers called 'Snatchy Sneakers'.
+
 CREDIT (Images) - Yousuf Azeem
+
 Year Made: 2023
+
 Date: Sat, March 4
+
 Grade: 6
 
 This was my first ever project with Javascript + a working fake money system.
