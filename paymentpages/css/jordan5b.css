@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Barlow:wght@200&family=Koulen&family=Londrina+Outline&family=Londrina+Solid:wght@300&family=Nunito:wght@200&family=Oswald&family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto+Slab:wght@300&family=Teko&family=Tinos&family=Uchen&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-form {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+}
+
+.formdiv {
+    width: 100%;
+    max-width: 520px;
+    height: 430px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.order-shoes button {
+  font-size: 20px;
+    position: absolute;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    padding: 5px 25px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.shoe-title h1 {
+  font-size: 30px;
+  position: absolute;
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Teko', sans-serif;
+  right: 20%;
+  top: 50px;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+    .formdiv {
+        top: 25%;
+        opacity: 100;
+    }
+    .input-form {
+        top: 25%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+ 
+  .shoe-title h1 {
+    font-size: 50px;
+    position: absolute;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+  }
+
+ .order-shoes button {
+  font-size: 20px;
+    position: absolute;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    padding: 5px 25px;
+    border: 1px solid black;
+    font-size: 20px;
+    right: 60%;
+    top: 380px;
+    transform: translateX(-50%);
+}
+ 
+  .input-form {
+    top: 20%;
+    width: 510px;
+    height: 430px;
+    left: 780px;
+    align-items: right;
+    border: 1px solid;
+    position: absolute;
+    transform: translateX(-70%);
+}
+
+.border {
+  left: 270px;
+  position: absolute;
+}
+
+.formdiv {
+    width: 510px;
+    height: 430px;
+    left: 780px;
+    align-items: right;
+
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1980px) {
+  .input-form {
+    top: 25%;
+    width: 510px;
+    height: 430px;
+    left: 780px;
+    align-items: right;
+    border: 1px solid;
+    position: absolute;
+    transform: translateX(-0%);
+}
+
+.shoe-title h1 {
+  font-size: 80px;
+  position: absolute;
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Teko', sans-serif;
+  left: 55%;
+  top: 150px;
+  transform: translateX(-50%);
+}
+}
+
+  
+  .input-form label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    
+  }
+  .input-form input[type='card'],
+  .input-form input[type='email'],
+  .input-form input[type='address'],
+  .input-form input[type='phone'],
+  .input-form input[type='state'],
+  .input-form input[type='cvv'],
+  .input-form input[type='name'] {
+    width: 200px;
+    height: 30px;
+  }
+
+  .name-input {
+    position: relative;
+    right: 240px;
+    padding: 10px;
+  }
+  .email-input {
+    position: relative;
+    bottom: 80px;
+    padding: 10px;
+  }
+  .card-input {
+    position: relative;
+    bottom: 60px;
+    right: 240px;
+    padding: 10px;
+  }
+  .address-input {
+    position: relative;
+    bottom: 140px;
+    padding: 10px;
+  }
+  .phone-input {
+    position: relative;
+    bottom: 200px;
+    right: 120px;
+    padding: 10px;
+  }
+  .state-input {
+    position: relative;
+    bottom: 220px;
+    right: 240px;
+    padding: 10px;
+  }
+  .cvv-input {
+    position: relative;
+    bottom: 140px;
+    padding: 10px;
+  }
+}
+
+.input-form label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-form input[type='card'],
+.input-form input[type='email'],
+.input-form input[type='address'],
+.input-form input[type='phone'],
+.input-form input[type='state'],
+.input-form input[type='cvv'],
+.input-form input[type='name'] {
+    width: 100%;
+    max-width: 200px;
+    height: 30px;
+}
+
+.name-input {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.email-input {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.card-input {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.address-input {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.phone-input {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.state-input {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.cvv-input {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnatchySneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+    <header>
+        <nav>
+          <ul class="nav-links">
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+              <li>
+                  <a href="showcaseshoe.html">Shoes</a>
+              </li>
+              <li>
+                  <a href="info.html">Info</a>
+              </li>
+          </ul>
+        </nav>
+      </header>
+      <p id="money-counter" class="moneycounter"></div>
+    <div class="shoe-container">
+    
+    <div class="text">
+        <div class="main-text">
+            <h1><span style="color: #c90000;">SNATCHY</span>SNEAKERS</h1>
+            <p><span style="color: #008dc9;">SNATCH</span> The <span style="color: #834100;">HYPE</span></p>
+        </div>
+        <div class="button">
+            <a href="showcaseshoe.html">SHOP</a>
+        </div>
+    </div>
+    
+      <div class="background"></div>
+      <script src="paymentpages/moneyscript.js"></script>
+
+      <script>
+        
+        let money = localStorage.getItem(money);
+        document.getElementById('money-counter').innerHTML = '$' + money;
+
+      </script>
+</body>
+</html>

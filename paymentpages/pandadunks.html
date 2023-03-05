@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Payment Page</title>
+    <link rel="stylesheet" href="css/pandadunks.css">
+</head>
+<div class="shoe-title">
+    <h1>Panda Dunks</h1>
+</div>
+    <form class="input-form">
+<div class="border">
+    <div class="name-input">
+        <label for="name">Full Name:</label>
+        <input type="name" id="name" name="name" placeholder="Full Name" required>
+    </div>
+    <div class="email-input">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+    </div>
+    <div class="card-input">
+        <label for="card">Credit Card:</label>
+        <input type="card" name="card" placeholder="Credit Card" required>
+    </div>
+    <div class="cvv-input">
+        <label for="cvv">CVV Pin:</label>
+        <input type="cvv" name="cvv" placeholder="CVV" required>
+    </div>
+    <div class="address-input">
+        <label for="address">Address:</label>
+        <input type="address" name="address" placeholder="Address" required>
+    </div>
+    <div class="state-input">
+        <label for="state">State:</label>
+        <input type="state" name="State" placeholder="State" required>
+    </div>
+    <div class="phone-input">
+        <label for="phone">Phone Number:</label>
+        <input type="phone" name="phone" placeholder="Phone Number" required>
+    </div>
+    <div class="order-shoes"> 
+        <button class="orderpd" href="#">Order</a>
+    </div>
+</div>
+      </form>
+      <script src="moneyscript.js"></script>
+      <script>
+        const orderpd = document.querySelector('.orderpd');
+          function makePurchase() {
+            let currentMoney = parseInt(localStorage.getItem(money));
+            if (currentMoney >= 120) {
+                localStorage.setItem(money, currentMoney - 120);
+                return true; // Purchase successful
+            } else {
+                return false; // Purchase failed due to insufficient funds
+            }
+        }
+        
+        orderpd.addEventListener("click", function() {
+        
+            const purchaseSuccessful = makePurchase(120);
+            if (purchaseSuccessful) {
+              alert("Order has been sent.");
+            } else {
+                alert("Insufficent Funds. ERROR.");
+            }
+        });
+              </script>
+</body>
+</html>
+</html>

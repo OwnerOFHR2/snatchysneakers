@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info | Snatchy Sneakers</title>
+    <link rel="stylesheet" href="info.css">
+</head>
+<body> 
+    <header>
+        <nav>
+          <ul class="nav-links">
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+              <li>
+                  <a href="showcaseshoe.html">Shoes</a>
+              </li>
+              <li>
+                  <a href="info.html">Info</a>
+              </li>
+          </ul>
+        </nav>
+      </header>
+      <p id="money-counter" class="moneycounter"></div>
+<div class="info">
+    <h1>6376 Hollywood Blvd, Los Angeles, CA 90028</h1>
+    <h6>Owner: HISHAM RASHID & YOUSUF AZEEM</h6>
+    <p>1-(XXX) XXX XXXX</p>
+</div>
+      <script src="paymentpages/moneyscript.js"></script>
+      <script>
+        
+        let money = localStorage.getItem(money);
+        document.getElementById('money-counter').innerHTML = '$' + money;
+
+      </script>
+</body>
+</html>
